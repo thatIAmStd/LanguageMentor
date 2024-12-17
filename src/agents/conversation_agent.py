@@ -2,13 +2,14 @@
 from langchain_ollama.chat_models import ChatOllama  # 导入 ChatOllama 模型
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder  # 导入提示模板相关类
 from langchain_core.messages import HumanMessage  # 导入人类消息类
-from utils.logger import LOG  # 导入日志工具
 
 from langchain_core.chat_history import (
     BaseChatMessageHistory,  # 基础聊天消息历史类
     InMemoryChatMessageHistory,  # 内存中的聊天消息历史类
 )
 from langchain_core.runnables.history import RunnableWithMessageHistory  # 导入带有消息历史的可运行类
+
+from src.utils.logger import LOG
 
 # 用于存储会话历史的字典
 store = {}
