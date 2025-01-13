@@ -7,7 +7,7 @@ from langchain_core.messages import HumanMessage, AIMessage  # 导入人类消�
 from langchain_core.runnables.history import RunnableWithMessageHistory  # 导入带有消息历史的可运行类
 
 from .session_history import get_session_history  # 导入会话历史相关方法
-from utils.logger import LOG
+from src.utils.logger import LOG
 
 class ScenarioAgent:
     def __init__(self, scenario_name):
